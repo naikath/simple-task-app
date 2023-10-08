@@ -1,0 +1,12 @@
+.debug-chart {
+	translate: 0%;
+	transition: translate 0.3s;
+	user-select: none;
+	-webkit-user-select: none;
+	word-break: break-all;
+}
+
+.debug-chart.hidden {
+	translate: -90%;
+	opacity: 0.5;
+}

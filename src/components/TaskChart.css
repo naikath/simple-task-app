@@ -1,0 +1,23 @@
+.task-chart .fa-circle-plus {
+	clip-path: circle(49% at 50.5% 50%);
+	background-color: white;
+	color: red;
+	font-size: 2rem;
+}
+
+.task-chart .fa-circle-plus:hover {
+	color: blue;
+}
+
+.task-chart input {
+	background-color: white;
+	color: black;
+}
+
+.task-chart .error-tooltip {
+	visibility: hidden;
+}
+
+.task-chart .error-tooltip.visible {
+	visibility: visible;
+}
