@@ -1,12 +1,20 @@
 .task-chart .fa-circle-plus {
 	clip-path: circle(49% at 50.5% 50%);
 	background-color: white;
-	color: red;
+	color: hsla(0, 100%, 40%);
 	font-size: 2rem;
 }
 
 .task-chart .fa-circle-plus:hover {
-	color: blue;
+	color: hsla(0, 100%, 50%);
+}
+
+.task-chart .icon-border {
+	position: absolute;
+	inset: 0;
+	clip-path: circle(37% at 50% 48%);
+
+	background: conic-gradient(from -90deg, white 270deg, transparent 270deg);
 }
 
 .task-chart input {

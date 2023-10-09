@@ -2,14 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+body {
+	/* overflow-y: hidden; */
+	position: relative;
+	min-height: 100dvh;
+}
+
 #root {
 	display: flex;
 	flex-direction: column;
 	background-color: black;
 	padding: 1rem;
 	min-height: 100dvh;
-	overflow: hidden;
+	max-height: 100%;
 	color: white;
+	/* overflow: hidden; */
 }
 
 textarea {

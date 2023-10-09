@@ -45,22 +45,24 @@ export function TaskChart({ addTask, logVisible }: Props & Logs) {
 	}
 
 	return (
-		<section className='tw-flex tw-justify-center'>
-			<div className='task-chart tw-relative tw-w-3/4 tw-rounded-lg tw-border-2 tw-border-black tw-p-4 dark:tw-border-white'>
+		<section className='tw-sticky tw-top-0 tw-flex tw-justify-center'>
+			<div className='task-chart tw-relative tw-w-3/4 tw-max-w-md tw-rounded-lg tw-border-2 tw-border-black tw-p-4 dark:tw-border-white dark:tw-bg-black lg:tw-w-full'>
 				<form
 					onSubmit={handleSubmit}
 					className='tw-flex tw-flex-col tw-justify-center tw-gap-4'
 				>
 					<button
-						className='tw-absolute tw-right-0 tw-top-0 -tw-translate-y-1/2 tw-translate-x-1/2'
+						className='icon tw-absolute tw-right-0 tw-top-0 -tw-translate-y-1/2 tw-translate-x-1/2 tw-p-2'
 						type='submit'
 					>
+						<div className='icon-border'></div>
 						<FontAwesomeIcon icon={['fas', 'circle-plus']} />
 					</button>
 
 					<input
 						type='text'
 						name='title'
+						maxLength={30}
 						className='tw-p-2'
 						placeholder='Important task for today'
 						value={title}
